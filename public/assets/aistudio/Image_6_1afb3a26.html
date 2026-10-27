@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "background": "#faf8fe", "on-secondary-fixed-variant": "#3631b4", "secondary-fixed": "#e2dfff", "error-container": "#ffdad6", "on-primary-fixed-variant": "#00458f", "on-tertiary-container": "#fffaf9", "surface-container-low": "#f4f3f8", "on-surface": "#1a1b1f", "on-primary-container": "#fcfbff", "outline-variant": "#c1c6d6", "on-background": "#1a1b1f", "surface": "#faf8fe", "primary-fixed": "#d7e2ff", "on-error-container": "#93000a", "inverse-surface": "#2f3034", "primary": "#0059b5", "secondary-container": "#6664e4", "surface-bright": "#faf8fe", "surface-container-lowest": "#ffffff", "surface-variant": "#e3e2e7", "on-primary-fixed": "#001b3f", "surface-container-high": "#e9e7ed", "tertiary-fixed": "#ffdcbf", "inverse-on-surface": "#f1f0f5", "on-primary": "#ffffff", "tertiary-container": "#ab6200", "primary-fixed-dim": "#abc7ff", "inverse-primary": "#abc7ff", "surface-container-highest": "#e3e2e7", "surface-container": "#eeedf3", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#6a3b00", "secondary-fixed-dim": "#c2c1ff", "surface-tint": "#005cbb", "surface-dim": "#dad9df", "on-surface-variant": "#414753", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#2d1600", "primary-container": "#0071e3", "on-secondary-container": "#fffbff", "tertiary-fixed-dim": "#ffb874", "outline": "#717785", "on-secondary-fixed": "#0c006a", "error": "#ba1a1a", "on-secondary": "#ffffff", "tertiary": "#884d00", "secondary": "#4c4aca" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "gutter": "1.25rem", "space-lg": "1.25rem", "space-md": "0.875rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-lg": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "title-md": ["Inter"], "display-hero": ["Inter"], "caption-caps": ["Inter"], "headline-md": ["Inter"], "label-numeric": ["JetBrains Mono"], "headline-sm": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.022em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.004em", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.008em", "fontWeight": "400" }], "title-md": ["17px", { "lineHeight": "22px", "letterSpacing": "-0.012em", "fontWeight": "600" }], "display-hero": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "600" }], "caption-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.018em", "fontWeight": "600" }], "label-numeric": ["12px", { "lineHeight": "16px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md"><span class="w-2 h-2 rounded-full bg-[#34c759] animate-pulse"></span><span class="font-label-numeric text-label-numeric uppercase text-on-surface tracking-wide">BKK 100%</span></div><h1 class="font-title-md text-title-md text-on-surface tracking-tight ml-1">Incidents</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-14 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-lg space-y-space-md">
+<!-- Operational Telemetry Bar -->
+<section class="bg-surface-container-lowest/80 backdrop-blur-xl rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center space-x-space-xs">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant">Telemetry Active</span>
+</div>
+<div class="flex items-center space-x-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+<span class="font-label-numeric text-label-numeric" id="poll-timer">15s</span>
+</div>
+</div>
+<!-- Status Metric Group -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between">
+<div>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">Active Minor</p>
+<p class="font-headline-sm text-headline-sm text-tertiary">1 Alert</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">build_circle</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between">
+<div>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">Critical</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">0 Threat</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+</div>
+<!-- Emergency Dispatch Trigger -->
+<button class="w-full h-10 rounded-lg bg-error-container text-on-error-container font-body-md text-body-md font-semibold flex items-center justify-center space-x-2 transition-all active:scale-[0.98]" id="dispatch-btn">
+<span class="material-symbols-outlined text-[18px] text-error">e911_emergency</span>
+<span>Emergency Dispatch Protocol</span>
+</button>
+</section>
+<!-- Filter Pills (iOS Segmented Style) -->
+<section class="overflow-x-auto no-scrollbar -mx-margin-mobile px-margin-mobile">
+<div class="flex space-x-2 min-w-max py-0.5" id="filter-pill-group">
+<button class="filter-pill px-3 py-1.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm font-semibold shadow-sm transition-all active:scale-95" data-filter="all">
+        All Incidents
+      </button>
+<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all active:scale-95" data-filter="active">
+        Active (1)
+      </button>
+<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all active:scale-95" data-filter="monitoring">
+        Monitoring (1)
+      </button>
+<button class="filter-pill px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-body-sm text-body-sm transition-all active:scale-95" data-filter="cleared">
+        Cleared (2)
+      </button>
+</div>
+</section>
+<!-- Incidents Stack -->
+<section class="flex flex-col space-y-space-md" id="incident-feed">
+<!-- Sathorn Square (Active/In Progress) -->
+<article class="incident-card bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl p-space-md shadow-sm relative overflow-hidden" data-status="active">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="space-y-0.5">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">apartment</span>
+<span class="font-title-md text-title-md text-on-surface tracking-tight">Sathorn Square</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">North Sathon Rd · Core Plant Telemetry</p>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-label-numeric font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary mr-1.5 animate-pulse"></span>
+          In Progress
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+        Tower A High-Zone Lift #4 sensor recalibration
+      </p>
+<!-- Video Feed & Diagnostic Detail -->
+<div class="grid grid-cols-5 gap-space-sm mb-space-md bg-surface-container-low p-2 rounded-lg">
+<div class="col-span-2 relative rounded overflow-hidden aspect-video bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="A modern glass and brushed stainless steel commercial elevator car interior at Sathorn Square Bangkok with optical diagnostic overlay and sensor test equipment on the floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0pxwYKXqPsgcVP6O74KxFa1YhLc-fxmT2H9efoQZm0Sg83pRAWlKGrpb7M6gvPiVn41C98YIniMVea74BdiT7Wr-swhkQUN5SDZhKYcH0nfNANukqIKAUeIj9UPuL89ZqjXalA9n-ByGw2A_50R8a3oAquYkHjCxIWN3Fy_dx3wI7c2WPPaesynYAvm4jFu1ilt7Ec64AKxPSEAgbCABfyQU6kWBs6H-sMgkPA3Sn_z-zgtxA41JyiA"/>
+<div class="absolute bottom-1 left-1 px-1 bg-inverse-surface/80 rounded text-[9px] font-label-numeric text-inverse-on-surface">CAM 04</div>
+</div>
+<div class="col-span-3 flex flex-col justify-center space-y-1">
+<div class="flex items-center space-x-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">timer</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">ETA: 40m remaining</span>
+</div>
+<div class="flex items-center space-x-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">engineering</span>
+<span class="font-body-sm text-body-sm truncate">KONE Rapid Response</span>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex items-center space-x-2 pt-1">
+<button class="flex-1 h-9 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold flex items-center justify-center space-x-1.5 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Acknowledge</span>
+</button>
+<button class="px-3 h-9 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold flex items-center justify-center space-x-1 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>Feed</span>
+</button>
+</div>
+</article>
+<!-- Silom Edge (Monitored) -->
+<article class="incident-card bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl p-space-md shadow-sm" data-status="monitoring">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="space-y-0.5">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">domain</span>
+<span class="font-title-md text-title-md text-on-surface tracking-tight">Silom Edge</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">BTS Sala Daeng Concourse Portal</p>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-[11px] font-label-numeric font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5"></span>
+          Monitored
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-sm">
+        Pedestrian skywalk entrance crowd surge during evening rush
+      </p>
+<div class="bg-surface-container-low rounded-lg p-2.5 mb-space-md space-y-1.5">
+<div class="flex items-center justify-between font-label-numeric text-label-numeric">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+            +2 Marshals Deployed
+          </span>
+<span class="text-primary font-semibold">Active 8m ago</span>
+</div>
+<!-- Occupancy Micro Meter -->
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<div class="flex items-center space-x-2">
+<button class="flex-1 h-9 rounded-lg bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold flex items-center justify-center space-x-1.5 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">linked_services</span>
+<span>View Live Cam</span>
+</button>
+<button class="h-9 w-9 rounded-lg bg-surface-container-low text-on-surface-variant flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</button>
+</div>
+</article>
+<!-- The PARQ (Cleared) -->
+<article class="incident-card bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl p-space-md shadow-sm" data-status="cleared">
+<div class="flex items-start justify-between mb-space-xs">
+<div class="space-y-0.5">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-outline text-[16px]">apartment</span>
+<span class="font-title-md text-title-md text-on-surface tracking-tight">The PARQ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ratchadaphisek Logistics Core</p>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-numeric font-medium">
+          Cleared · 14:24
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+        B2 Loading Bay Access gate sensor delay cleared
+      </p>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-[#34c759]">check_circle</span>
+          Logistics flow normal
+        </span>
+<span class="font-label-numeric text-[11px]">Gate 03 Validated</span>
+</div>
+</article>
+<!-- QSNCC (Secured/Cleared) -->
+<article class="incident-card bg-surface-container-lowest/90 backdrop-blur-xl rounded-xl p-space-md shadow-sm" data-status="cleared">
+<div class="flex items-start justify-between mb-space-xs">
+<div class="space-y-0.5">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-outline text-[16px]">local_police</span>
+<span class="font-title-md text-title-md text-on-surface tracking-tight">QSNCC</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Summit Pavilion Level 1</p>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-numeric font-medium">
+          Secured · 13:40
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+        Hall 3 VIP motorcade security sweep completed
+      </p>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+          Special Protection Wing
+        </span>
+<span class="font-label-numeric text-[11px]">Clearance Pass Alpha</span>
+</div>
+</article>
+</section>
+<!-- iOS Master Directive Actions Sheet Drawer -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm mt-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Executive Directives</span>
+<span class="font-label-numeric text-[11px] text-primary">Duty Level 1</span>
+</div>
+<div class="flex flex-col space-y-2">
+<!-- Directive Action -->
+<button class="w-full h-11 px-space-md bg-surface-container-lowest text-on-surface rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center space-x-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">campaign</span>
+<span class="font-body-md text-body-md font-medium">Broadcast Security Directive</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">chevron_right</span>
+</button>
+<!-- Commander Contact Action -->
+<button class="w-full h-11 px-space-md bg-surface-container-lowest text-on-surface rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center space-x-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+<span class="font-body-md text-body-md font-medium">Contact Duty Commander</span>
+</div>
+<div class="flex items-center space-x-1">
+<span class="w-2 h-2 rounded-full bg-[#34c759]"></span>
+<span class="material-symbols-outlined text-outline text-[18px]">call</span>
+</div>
+</button>
+</div>
+</section>
+</div>
+<script>
+  // Dynamic 15-second polling simulation
+  let countdown = 15;
+  const pollElement = document.getElementById('poll-timer');
+  setInterval(() => {
+    countdown = countdown <= 1 ? 15 : countdown - 1;
+    if (pollElement) {
+      pollElement.textContent = countdown + 's';
+    }
+  }, 1000);
+
+  // Filter Pill Controller
+  const pills = document.querySelectorAll('.filter-pill');
+  const cards = document.querySelectorAll('.incident-card');
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      // Toggle button styles
+      pills.forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        p.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+
+      const filter = pill.getAttribute('data-filter');
+      cards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-status') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Emergency dispatch tactile response
+  const dispatchBtn = document.getElementById('dispatch-btn');
+  if (dispatchBtn) {
+    dispatchBtn.addEventListener('click', () => {
+      const originalText = dispatchBtn.innerHTML;
+      dispatchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Connecting Command Network...</span>';
+      setTimeout(() => {
+        dispatchBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Signal Dispatched to Central Ops</span>';
+        setTimeout(() => {
+          dispatchBtn.innerHTML = originalText;
+        }, 2500);
+      }, 900);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="map-overview" href="#"><span class="material-symbols-outlined text-[22px]">map</span><span class="font-caption-caps text-caption-caps mt-0.5">Map</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="readiness" href="#"><span class="material-symbols-outlined text-[22px]">health_and_safety</span><span class="font-caption-caps text-caption-caps mt-0.5">Readiness</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-primary font-semibold" data-path="incidents" href="#"><span class="material-symbols-outlined text-[22px]">warning</span><span class="font-caption-caps text-caption-caps mt-0.5">Incidents</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="events" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-caption-caps text-caption-caps mt-0.5">Events</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="properties" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-caption-caps text-caption-caps mt-0.5">Properties</span></a></div></nav></body></html>
